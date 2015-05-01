@@ -1,0 +1,24 @@
+{
+  "name": "avalanche: Base form",
+  "version": "2.0.0",
+  "homepage": "https://github.com/avalanchesass/avalanche_base_form",
+  "authors": [
+    "Markus Oberlehner"
+  ],
+  "description": "Base form styles",
+  "keywords": [
+    "SASS",
+    "CSS"
+  ],
+  "license": "GPL v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "avalanche_system_variable": "dev"
+  }
+}
