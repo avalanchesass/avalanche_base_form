@@ -1,6 +1,11 @@
 /**
  * Form
  *
+ * Basic form styling and enhancements to ensure consistency across browsers.
+ * More complex form styles should be applied via components. Form layouts can be
+ * achieved with a combination of the [avalanche grid object](https://github.com/avalanchesass/avalanche_object_grid)
+ * and the [avalanche width utility](https://github.com/avalanchesass/avalanche_utility_width).
+ *
  * @level X.X.
  * @markup
  * <form>
