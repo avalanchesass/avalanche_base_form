@@ -1,0 +1,119 @@
+@import 'avalanchesass_base_form/style_guide';
+
+/* extract base.css */
+/* extract base_form.css */
+/*---
+title:   Example
+name:    base_form_example
+section: base_form
+order:   1
+---
+
+```example:html
+<form>
+  <div>
+    <label for="text">Text field</label>
+    <input type="text" id="text" name="text" placeholder="Placeholder">
+  </div>
+  <div>
+    <label for="password">Password field</label>
+    <input type="password" id="password" name="password">
+  </div>
+  <div>
+    <label for="select">Select field</label>
+    <select id="select" name="select"><option>test</option></select>
+  </div>
+  <div>
+    <label for="textarea">Select field</label>
+    <textarea id="textarea" name="textarea"></textarea>
+  </div>
+  <div>
+    <label for="radio-lorem"><input id="radio-lorem" name="radio" type="radio" value="Lorem"> Lorem</label>
+    <label for="radio-ipsum"><input id="radio-ipsum" name="radio" type="radio" value="Ipsum"> Ipsum</label>
+  </div>
+  <div>
+    <label for="checkbox-lorem"><input id="checkbox-lorem" name="checkbox" type="checkbox" value="Lorem"> Lorem</label>
+    <label for="checkbox-ipsum"><input id="checkbox-ipsum" name="checkbox" type="checkbox" value="Ipsum"> Ipsum</label>
+  </div>
+  <div>
+    <label for="file">File field</label>
+    <input type="file" id="file" name="file">
+  </div>
+  <div>
+    <label for="range">Range field</label>
+    <input type="range" id="range" name="range">
+  </div>
+  <div>
+    <input type="submit" value="Submit" class="c-button">
+    <button type="submit" class="c-button">Submit</button>
+   </div>
+</form>
+```
+*/
+label {
+  display: inline-block;
+}
+
+button,
+input,
+textarea {
+  padding: map-get($spacing, xs);
+  max-width: 100%;
+  border: 1px solid map-get($cs-grey, c);
+  line-height: inherit;
+  transition: border-color ease-in-out 0.1s;
+  &:focus {
+    outline: none;
+    border-color: map-get($cs, a);
+  }
+}
+
+button,
+input[type='submit'] {
+  border: none;
+}
+
+input[type='radio'],
+input[type='checkbox'],
+input[type='file'],
+input[type='range'] {
+  padding: 0;
+  max-width: none;
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+/**
+ * Set the height of file controls to match text inputs.
+ */
+input[type='file'] {
+  display: block;
+  line-height: normal;
+}
+
+/**
+ * Make range inputs behave like textual form controls.
+ */
+input[type='range'] {
+  display: block;
+  width: 100%;
+}
+
+/**
+ * Make multiple select elements height not fixed.
+ */
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+/**
+ * Reset height for textarea`s.
+ */
+textarea {
+  height: auto;
+}
+/* end extract base_form.css */
+/* end extract base.css */

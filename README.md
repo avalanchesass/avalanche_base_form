@@ -1,7 +1,18 @@
-# avalanche: Base form
-Base form styles  
-https://github.com/avalanchesass/avalanche_base_form
+# avalanchesass_base_form
+Basic form styles.
 
+## Install
+```
+npm install avalanchesass_base_form --save
+```
+
+## Basic usage
+```css
+/* Import the main file. */
+@import 'avalanchesass_base_form';
+```
+
+## About
 ### Author
 Markus Oberlehner  
 Twitter: https://twitter.com/MaOberlehner
